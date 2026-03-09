@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jackson Farms — A modern agricultural operation in Ordway, Colorado. Crop production, livestock management, and smart farming solutions since 2022.">
+  <title>Jackson Farms | Rooted in Colorado. Growing the Future.</title>
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">🌾</span>
+        Jackson Farms
+      </a>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#operations" class="nav__link">Operations</a>
+        <a href="#dashboard" class="nav__link">Dashboard</a>
+        <a href="#location" class="nav__link">Location</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </div>
+
+      <a href="#contact" class="nav__cta">Get in Touch</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-menu-link">About</a>
+    <a href="#operations" class="mobile-menu-link">Operations</a>
+    <a href="#dashboard" class="mobile-menu-link">Dashboard</a>
+    <a href="#location" class="mobile-menu-link">Location</a>
+    <a href="#contact" class="mobile-menu-link">Contact</a>
+  </div>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" id="heroBg" style="background-image: url('hero-bg.png');"></div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Ordway, Colorado
+      </div>
+      <h1 class="hero__title">
+        Rooted in Colorado.<br>
+        <span class="hero__title-accent">Growing the Future.</span>
+      </h1>
+      <p class="hero__description">
+        Jackson Farms is a family-operated agricultural LLC nestled in the heart of 
+        Crowley County, committed to sustainable farming and modern agricultural practices.
+      </p>
+      <div class="hero__actions">
+        <a href="#operations" class="btn btn--primary">
+          Explore Our Operations
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#about" class="btn btn--secondary">Learn Our Story</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      Scroll
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ====== STATS BAR ====== -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-bar__grid reveal-stagger" id="statsBar">
+        <div class="stats-bar__item">
+          <div class="stats-bar__number" data-target="2022">2022</div>
+          <div class="stats-bar__text">Year Established</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__number" data-target="100" data-suffix="%">100%</div>
+          <div class="stats-bar__text">Compliance Rate</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__number">Crowley Co.</div>
+          <div class="stats-bar__text">County, Colorado</div>
+        </div>
+        <div class="stats-bar__item">
+          <div class="stats-bar__number" style="color: var(--green-500);">● Active</div>
+          <div class="stats-bar__text">LLC Good Standing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-wrapper reveal reveal--left">
+          <img src="hero-bg.png" alt="Jackson Farms aerial view of Colorado farmland">
+          <div class="about__image-accent"></div>
+        </div>
+        <div class="about__content reveal reveal--right">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Cultivating Colorado's<br>Agricultural Legacy</h2>
+          <p class="about__text">
+            Founded in early 2022, Jackson Farms (officially registered as Jackson's Farms, LLC) 
+            is rooted in the rich agricultural tradition of Southeast Colorado. Located at 
+            8295 Maverick Lane in Ordway, we operate proudly within Crowley County — a region 
+            known for its dedicated farming communities and vast open landscapes.
+          </p>
+          <p class="about__text">
+            Under the stewardship of Dwight Ringler, our operation maintains a steadfast 
+            commitment to sustainable practices, efficient resource management, and the 
+            modernization of traditional farming methods. Our LLC is currently in 
+            <strong>Good Standing</strong> with the Colorado Secretary of State.
+          </p>
+          <div class="about__highlights">
+            <div class="about__highlight-item">
+              <div class="about__highlight-icon">🌱</div>
+              <div class="about__highlight-text">
+                <h4>Sustainable Practices</h4>
+                <p>Eco-conscious farming methods</p>
+              </div>
+            </div>
+            <div class="about__highlight-item">
+              <div class="about__highlight-icon">💧</div>
+              <div class="about__highlight-text">
+                <h4>Water Conservation</h4>
+                <p>Smart irrigation management</p>
+              </div>
+            </div>
+            <div class="about__highlight-item">
+              <div class="about__highlight-icon">📊</div>
+              <div class="about__highlight-text">
+                <h4>Data-Driven</h4>
+                <p>Modern technology integration</p>
+              </div>
+            </div>
+            <div class="about__highlight-item">
+              <div class="about__highlight-icon">🤝</div>
+              <div class="about__highlight-text">
+                <h4>Community First</h4>
+                <p>Supporting local agriculture</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== OPERATIONS ====== -->
+  <section class="section operations" id="operations">
+    <div class="container">
+      <div class="operations__header reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Our Core Operations</h2>
+        <p class="section-subtitle">
+          From crop production to water resource management, Jackson Farms leverages 
+          modern techniques and deep agricultural knowledge to deliver excellence.
+        </p>
+      </div>
+      <div class="operations__grid reveal-stagger" id="operationsGrid">
+        <div class="operation-card">
+          <span class="operation-card__number">01</span>
+          <div class="operation-card__icon">🌾</div>
+          <h3 class="operation-card__title">Crop Production</h3>
+          <p class="operation-card__description">
+            Growing region-appropriate crops suited to the Southeast Colorado climate, 
+            utilizing precision agriculture techniques for optimal yield and sustainability.
+          </p>
+        </div>
+        <div class="operation-card">
+          <span class="operation-card__number">02</span>
+          <div class="operation-card__icon">🐄</div>
+          <h3 class="operation-card__title">Livestock Management</h3>
+          <p class="operation-card__description">
+            Responsible livestock operations with a focus on animal welfare, 
+            sustainable grazing practices, and efficient herd management systems.
+          </p>
+        </div>
+        <div class="operation-card">
+          <span class="operation-card__number">03</span>
+          <div class="operation-card__icon">💧</div>
+          <h3 class="operation-card__title">Water Resource Management</h3>
+          <p class="operation-card__description">
+            Critical water management in Colorado's arid climate — implementing 
+            advanced irrigation, monitoring usage, and ensuring compliance with 
+            state regulations.
+          </p>
+        </div>
+        <div class="operation-card">
+          <span class="operation-card__number">04</span>
+          <div class="operation-card__icon">🔧</div>
+          <h3 class="operation-card__title">Equipment & Maintenance</h3>
+          <p class="operation-card__description">
+            Maintaining a fleet of modern agricultural machinery with preventive 
+            maintenance schedules and data-driven equipment lifecycle management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DASHBOARD SHOWCASE ====== -->
+  <section class="section section--dark dashboard" id="dashboard">
+    <div class="container">
+      <div class="dashboard__header reveal">
+        <span class="section-label">Innovation</span>
+        <h2 class="section-title">Smart Farm Management</h2>
+        <p class="section-subtitle">
+          Our proprietary dashboard centralizes all farm data — from crop tracking to 
+          financial reporting — giving us real-time visibility into every aspect of our operations.
+        </p>
+      </div>
+      <div class="dashboard__showcase">
+        <div class="dashboard__visual reveal reveal--left" id="dashboardVisual">
+          <div class="dashboard__dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="dashboard__mockup">
+            <div class="dashboard__widget">
+              <div class="dashboard__widget-label">Crop Yield</div>
+              <div class="dashboard__widget-value">94.2%</div>
+              <div class="dashboard__widget-bar">
+                <div class="dashboard__widget-bar-fill dashboard__widget-bar-fill--green" data-width="94"></div>
+              </div>
+            </div>
+            <div class="dashboard__widget">
+              <div class="dashboard__widget-label">Water Usage</div>
+              <div class="dashboard__widget-value">67.8%</div>
+              <div class="dashboard__widget-bar">
+                <div class="dashboard__widget-bar-fill dashboard__widget-bar-fill--blue" data-width="68"></div>
+              </div>
+            </div>
+            <div class="dashboard__widget--wide dashboard__widget">
+              <div class="dashboard__widget-label">Equipment Health</div>
+              <div class="dashboard__widget-value">All Systems Operational</div>
+              <div class="dashboard__widget-bar">
+                <div class="dashboard__widget-bar-fill dashboard__widget-bar-fill--gold" data-width="100"></div>
+              </div>
+            </div>
+            <div class="dashboard__widget">
+              <div class="dashboard__widget-label">Revenue YTD</div>
+              <div class="dashboard__widget-value" style="color: var(--gold-400);">On Track</div>
+            </div>
+            <div class="dashboard__widget">
+              <div class="dashboard__widget-label">Compliance</div>
+              <div class="dashboard__widget-value" style="color: var(--green-400);">100%</div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__features reveal reveal--right">
+          <div class="dashboard-feature">
+            <div class="dashboard-feature__icon dashboard-feature__icon--green">📱</div>
+            <div class="dashboard-feature__content">
+              <h4>Offline-First Mobile</h4>
+              <p>Access critical farm data from remote fields without internet connectivity. Sync automatically when back online.</p>
+            </div>
+          </div>
+          <div class="dashboard-feature">
+            <div class="dashboard-feature__icon dashboard-feature__icon--blue">⛈️</div>
+            <div class="dashboard-feature__content">
+              <h4>Extreme Weather Alerts</h4>
+              <p>Automated notifications for severe weather conditions specific to the Ordway, CO region — hail, frost, and drought warnings.</p>
+            </div>
+          </div>
+          <div class="dashboard-feature">
+            <div class="dashboard-feature__icon dashboard-feature__icon--gold">💰</div>
+            <div class="dashboard-feature__content">
+              <h4>Financial Tracking</h4>
+              <p>Real-time expense vs. yield analysis, seasonal budget forecasting, and comprehensive financial reporting.</p>
+            </div>
+          </div>
+          <div class="dashboard-feature">
+            <div class="dashboard-feature__icon dashboard-feature__icon--purple">📋</div>
+            <div class="dashboard-feature__content">
+              <h4>Compliance Reporting</h4>
+              <p>Automated regulatory reports for the Colorado Secretary of State and other agricultural agencies — always audit-ready.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LOCATION ====== -->
+  <section class="section location" id="location">
+    <div class="container">
+      <div class="location__grid">
+        <div class="location__info reveal reveal--left">
+          <span class="section-label">Our Home</span>
+          <h2 class="section-title">Ordway, Colorado</h2>
+          <h3>The Heart of Crowley County</h3>
+          <p class="location__text">
+            Nestled in the expansive plains of Southeast Colorado, Ordway is a 
+            community built on agriculture. The region's semi-arid climate and open 
+            landscapes make it ideal for diverse agricultural operations — from crop 
+            production to livestock management.
+          </p>
+          <div class="location__details">
+            <div class="location__detail">
+              <div class="location__detail-icon">📍</div>
+              <div class="location__detail-text">
+                <strong>Address</strong>
+                <span>8295 Maverick Lane, Ordway, CO 81063</span>
+              </div>
+            </div>
+            <div class="location__detail">
+              <div class="location__detail-icon">🏔️</div>
+              <div class="location__detail-text">
+                <strong>Region</strong>
+                <span>Crowley County, Southeast Colorado</span>
+              </div>
+            </div>
+            <div class="location__detail">
+              <div class="location__detail-icon">🌡️</div>
+              <div class="location__detail-text">
+                <strong>Climate</strong>
+                <span>Semi-arid, with warm summers and cold winters</span>
+              </div>
+            </div>
+            <div class="location__detail">
+              <div class="location__detail-icon">🌍</div>
+              <div class="location__detail-text">
+                <strong>Elevation</strong>
+                <span>~4,300 ft above sea level</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location__map reveal reveal--right">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12710.38768!2d-103.7583!3d38.2178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87117e4f44e3a42d%3A0x38f63d59f0c5f776!2sOrdway%2C%20CO%2081063!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Jackson Farms location in Ordway, Colorado">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA BANNER ====== -->
+  <section class="section--green cta-banner">
+    <div class="container">
+      <div class="cta-banner__content reveal">
+        <h2 class="cta-banner__title">Ready to Connect?</h2>
+        <p class="cta-banner__text">
+          Whether you're a fellow farmer, a partner, or just curious about modern 
+          agriculture in Colorado — we'd love to hear from you.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="#contact" class="btn btn--gold">
+            Contact Us Today
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#operations" class="btn btn--secondary">View Operations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info reveal reveal--left">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Contact Jackson Farms</h2>
+          <p class="contact__info-text">
+            Have a question, partnership opportunity, or simply want to learn more 
+            about our operations? Drop us a line — we'd love to connect.
+          </p>
+          <div class="contact__methods">
+            <div class="contact__method">
+              <div class="contact__method-icon">📍</div>
+              <div class="contact__method-text">
+                <strong>Visit Us</strong>
+                <span>8295 Maverick Lane, Ordway, CO 81063</span>
+              </div>
+            </div>
+            <div class="contact__method">
+              <div class="contact__method-icon">📞</div>
+              <div class="contact__method-text">
+                <strong>Call Us</strong>
+                <span>(719) 555-0123</span>
+              </div>
+            </div>
+            <div class="contact__method">
+              <div class="contact__method-icon">✉️</div>
+              <div class="contact__method-text">
+                <strong>Email Us</strong>
+                <span>info@jacksonfarms.co</span>
+              </div>
+            </div>
+            <div class="contact__method">
+              <div class="contact__method-icon">🕐</div>
+              <div class="contact__method-text">
+                <strong>Hours</strong>
+                <span>Mon – Fri: 7:00 AM – 5:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__form reveal reveal--right">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="general">General Inquiry</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="products">Products & Services</option>
+                <option value="employment">Employment</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-icon">🌾</span>
+            Jackson Farms
+          </div>
+          <p class="footer__description">
+            A modern agricultural operation in the heart of Southeast Colorado. 
+            Rooted in tradition, growing with innovation.
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <h4>Quick Links</h4>
+          <a href="#about">About Us</a>
+          <a href="#operations">Operations</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__column">
+          <h4>Operations</h4>
+          <a href="#operations">Crop Production</a>
+          <a href="#operations">Livestock</a>
+          <a href="#operations">Water Management</a>
+          <a href="#operations">Equipment</a>
+        </div>
+        <div class="footer__column">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Jackson's Farms, LLC. All rights reserved.</p>
+        <p>8295 Maverick Lane, Ordway, CO 81063</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
